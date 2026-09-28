@@ -1,0 +1,25 @@
+{
+  "name": "postmortem-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "PostmortemAI — Incident-to-Knowledge Learning System. RAG + MCP + AI Agents (LangChain/LangGraph) over PostgreSQL + MongoDB.",
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,magenta \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:server": "npm --workspace server run dev",
+    "dev:client": "npm --workspace client run dev",
+    "start": "npm --workspace server run start",
+    "seed": "npm --workspace server run seed",
+    "build": "npm --workspace client run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

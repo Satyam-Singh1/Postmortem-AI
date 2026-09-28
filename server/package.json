@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "node --watch src/index.js",
+    "start": "node src/index.js",
+    "seed": "node src/seed/seed.js",
+    "mcp": "node src/mcp/stdio.js"
+  },
+  "keywords": [],
+  "author": "Satyam Singh",
+  "license": "ISC",
+  "description": "Server for the Postmortem AI application",
+  "dependencies": {
+    "@langchain/core": "^0.3.30",
+    "@langchain/google-genai": "^0.1.6",
+    "@langchain/langgraph": "^0.2.40",
+    "@langchain/pinecone": "^0.1.3",
+    "@langchain/textsplitters": "^0.1.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@pinecone-database/pinecone": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongodb": "^6.12.0",
+    "morgan": "^1.10.0",
+    "nanoid": "^5.0.9",
+    "pg": "^8.13.1",
+    "zod": "^3.24.1"
+  }
+}
