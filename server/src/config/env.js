@@ -11,7 +11,7 @@ dotenv.config({ path: path.resolve(__dirname, '../../../.env') });
 export const config = {
   port: Number(process.env.PORT) || 4000,
   nodeEnv: process.env.NODE_ENV || 'development',
-  clientOrigin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+  clientOrigin: 'https://postmortemaii.netlify.app/' || 'http://localhost:5173',
 
   ai: {
     provider: (process.env.AI_PROVIDER || 'gemini').toLowerCase(),
