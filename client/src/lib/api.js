@@ -1,7 +1,7 @@
 // PostmortemAI REST API
 // Production backend hosted on Render.
 
-const BASE = "https://postmortem-ai-server.onrender.com/api";
+const BASE = "https://postmortem-ai-8qk5.onrender.com/api";
 
 async function request(path, options = {}) {
   let res;
